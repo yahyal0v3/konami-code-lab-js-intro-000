@@ -15,11 +15,10 @@ function init() {
   // your code here
 }
 
+let index = 0
 document.body.addEventListener('keydown', function(e) {
-  let index = 0
-  if (e.key === codes[index]) {      
+  if (e.key === codes[index]) {
     index++
-    console.log(index)
     console.log(e.key)
     if (index === codes.length) {
       alert("Hurray!")
